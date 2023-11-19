@@ -48,7 +48,7 @@ const DetailArtikel = ({ params }: Props) => {
                 {getFormattedDate(artikel?.created_at)}
               </div>
               <div className="flex gap-5 md:gap-10  ">
-                <div className="text-blue-500 font-normal text-xs md:text-base sm:font-normal md:font-semibold">
+                <div className="text-blue-700 font-normal text-xs md:text-base sm:font-normal md:font-semibold">
                   <FontAwesomeIcon
                     icon={faShareFromSquare}
                     className="mr-1 md:mr-2"
@@ -86,7 +86,7 @@ const DetailArtikel = ({ params }: Props) => {
             />
             <div>
               <div className="font-bold text-2xl lg:text-2xl md:text-xl sm:text-lg mb-3">
-                <span className="border-b-4 pb-1 border-blue-500">Lainnya</span>{' '}
+                <span className="border-b-4 pb-1 border-blue-00">Lainnya</span>{' '}
                 dari sekilas ilmu
               </div>
 

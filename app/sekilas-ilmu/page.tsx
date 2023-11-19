@@ -7,7 +7,7 @@ import React from 'react';
 export default function SekilasIlmu() {
   return (
     <>
-      <div className="min-h-screen mx-auto px-3 sm:px-3 lg:px-16 mt-20 bg-gray-50">
+      <div className="mx-auto px-3 sm:px-3 lg:px-16 mt-20 bg-gray-50">
         <Breadcrumbs />
         <Search />
         <Tab searchs=''/>

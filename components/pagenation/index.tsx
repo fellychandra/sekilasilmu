@@ -37,7 +37,7 @@ export default function Pagination({ current_page, max_page, setPage }: TPage) {
             <li>
               <button
                 onClick={handlePrevPage}
-                className={`px-3 py-1 font-medium text-gray-500  hover:bg-blue-500 hover:text-white rounded-md ${1===current_page ? 'cursor-not-allowed pointer-events-none text-gray-300' : ''}`}
+                className={`px-3 py-1 font-medium text-gray-500  hover:bg-blue-700 hover:text-white rounded-md ${1===current_page ? 'cursor-not-allowed pointer-events-none text-gray-300' : ''}`}
               >
                 &laquo;
               </button>
@@ -49,7 +49,7 @@ export default function Pagination({ current_page, max_page, setPage }: TPage) {
                   onClick={ () => handlePage(page)}
                   className={`px-3 py-1 font-medium rounded-md  ${
                     page == current_page
-                      ? 'text-white hover:bg-gray-300 bg-blue-500'
+                      ? 'text-white hover:bg-gray-300 bg-blue-700'
                       : 'text-gray-500 hover:bg-gray-300'
                   }`}
                 >
@@ -60,7 +60,7 @@ export default function Pagination({ current_page, max_page, setPage }: TPage) {
             <li>
               <button
                 onClick={handleNextPage}
-                className={`px-3 py-1 font-medium text-gray-500  hover:bg-blue-500 hover:text-white rounded-md ${max_page===current_page ? 'cursor-not-allowed pointer-events-none text-gray-300' : ''}`}
+                className={`px-3 py-1 font-medium text-gray-500  hover:bg-blue-700 hover:text-white rounded-md ${max_page===current_page ? 'cursor-not-allowed pointer-events-none text-gray-300' : ''}`}
               >
                 &raquo;
               </button>

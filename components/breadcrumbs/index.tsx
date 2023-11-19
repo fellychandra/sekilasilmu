@@ -28,13 +28,13 @@ export default function Breadcrumbs() {
   return (
     <>
       <div>
-        <nav className="text-sm sm:text-base">
-          <ol className="list-none inline-flex">
+        <div className="text-sm sm:text-base">
+          <ul className="list-none inline-flex">
             <Link href={'/'}>
-              <div className="p-4 text-blue-500 font-semibold">Beranda</div>{' '}
+              <div className="p-4 text-blue-700 font-semibold">Beranda</div>{' '}
             </Link>
             {breadcrumbs.map((path, index) => (
-              <li key={index} className="flex items-center">
+              <ul key={index} className="flex items-center">
                 {index < breadcrumbs.length && (
                   <FontAwesomeIcon icon={faAngleRight} />
                 )}
@@ -44,16 +44,16 @@ export default function Breadcrumbs() {
                       pathname.startsWith(path.href) &&
                       index == breadcrumbs.length - 1
                         ? 'hover:text-gray-700 text-gray-500'
-                        : 'text-blue-500 font-semibold'
+                        : 'text-blue-700 font-semibold'
                     }`}
                   >
                     {path.text}
                   </div>
                 </Link>
-              </li>
+              </ul>
             ))}
-          </ol>
-        </nav>
+          </ul>
+        </div>
       </div>
     </>
   );
