@@ -24,7 +24,7 @@ export default function Search() {
       <div className="grid grid-cols-1 gap-6 mt-6 mx-5 text-center">
         <div className="text-center">
           <h1 className="sm:text-xl md:text-2xl font-bold p-3">Sekilas Ilmu</h1>
-          <p className="text-gray-400 p-2">
+          <p className="text-gray-500 p-2">
             Temukan artikel menarik yang bakal menambah wawasanmu disini!
           </p>
         </div>

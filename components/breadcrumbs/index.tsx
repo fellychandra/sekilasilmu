@@ -29,12 +29,12 @@ export default function Breadcrumbs() {
     <>
       <div>
         <div className="text-sm sm:text-base">
-          <ul className="list-none inline-flex">
+          <div className="list-none inline-flex">
             <Link href={'/'}>
               <div className="p-4 text-blue-700 font-semibold">Beranda</div>{' '}
             </Link>
             {breadcrumbs.map((path, index) => (
-              <ul key={index} className="flex items-center">
+              <div key={index} className="flex items-center">
                 {index < breadcrumbs.length && (
                   <FontAwesomeIcon icon={faAngleRight} />
                 )}
@@ -50,9 +50,9 @@ export default function Breadcrumbs() {
                     {path.text}
                   </div>
                 </Link>
-              </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </>

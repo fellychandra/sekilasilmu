@@ -76,7 +76,7 @@ export default function Card(dataArtikel: TArtikels) {
               <p className="text-gray-400 text-sm md:text-base">
                 {artikels.views} views
               </p>
-              <button
+              <div className="cursor-pointer"
                 onClick={() =>
                   handleSimpan({
                     slug: artikels.slug,
@@ -100,7 +100,7 @@ export default function Card(dataArtikel: TArtikels) {
                       : "bg-gray-100 text-gray-400"
                   } `}
                 />
-              </button>
+              </div>
             </div>
           </div>
         </div>
